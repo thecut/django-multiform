@@ -1,6 +1,12 @@
 from __future__ import unicode_literals
 
-from collections import defaultdict, OrderedDict
+from collections import defaultdict
+
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
+
 from itertools import chain
 from functools import reduce
 
